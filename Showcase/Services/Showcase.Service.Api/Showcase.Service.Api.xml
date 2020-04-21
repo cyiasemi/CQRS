@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Showcase.Service.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Showcase.Service.Api.Controllers.ActionController">
+            <summary>
+            This controller is exposed to the Updater service. Also used by integration tests to produce data
+            </summary>
+        </member>
+        <member name="M:Showcase.Service.Api.Controllers.ActionController.UpdateMovies">
+            <summary>
+            Signals the data update procedure with update command
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Showcase.Service.Api.Controllers.ActionController.InitializeMovies">
+            <summary>
+            Signals the initialization procedure with the initialize command
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Showcase.Service.Api.Controllers.ActionController.PopulatePopular">
+            <summary>
+            Filling image cache with data from popular movies.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Showcase.Service.Api.Controllers.MoviesController.GetMoviesAsync">
+            <summary>
+            Get summary for all movies
+            </summary>
+            <returns>Movie List with basic information</returns>
+        </member>
+        <member name="M:Showcase.Service.Api.Controllers.MoviesController.GetMovieAsync(System.Guid)">
+            <summary>
+            Get movie by id
+            </summary>
+            <param name="id">Id of movie</param>
+            <returns>Movie information</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Showcase.Service.Api.Controllers.MoviesController.ValidateImageCache(System.Guid)" -->
+        <member name="M:Showcase.Service.Api.AsyncInitializationExtentions.InitAsync(Microsoft.Extensions.Hosting.IHost)">
+            <summary>
+            Initializes the application, by calling all registered async initializers.
+            </summary>
+            <param name="host">The web host.</param>
+            <returns>A task that represents the initialization completion.</returns>
+        </member>
+        <member name="T:Showcase.Service.Api.Helpers.SwaggerControllerOrderAttribute">
+            <summary>
+            Annotates a controller with a Swagger sorting order that is used when generating the Swagger documentation to
+            order the controllers in a specific desired order.
+            </summary>
+        </member>
+        <member name="P:Showcase.Service.Api.Helpers.SwaggerControllerOrderAttribute.Order">
+            <summary>
+            Gets the sorting order of the controller.
+            </summary>
+        </member>
+        <member name="M:Showcase.Service.Api.Helpers.SwaggerControllerOrderAttribute.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Showcase.Service.Api.Helpers.SwaggerControllerOrderAttribute"/> class.
+            </summary>
+            <param name="order">Sets the sorting order of the controller.</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="8.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Services\Showcase.Service.Consumer\Showcase.Service.Application.csproj" />
+    <ProjectReference Include="..\Services\Showcase.Service.HttpDownloader\Showcase.Service.HttpDownloader.csproj" />
+    <ProjectReference Include="..\Services\Showcase.Services.FileImageSaver\Showcase.Services.FileImageSaver.csproj" />
+    <ProjectReference Include="..\Services\Showcase.Services.ImageMemoryDb\Showcase.Services.ImageMemoryDb.csproj" />
+    <ProjectReference Include="..\Services\Showcase.Services.JsonConverter\Showcase.Services.JsonConverter.csproj" />
+    <ProjectReference Include="..\Services\Showcase.Services.MemoryDb\Showcase.Services.MovieMemoryDb.csproj" />
+    <ProjectReference Include="..\Showcase.Domain.Core\Showcase.Domain.Core.csproj" />
+  </ItemGroup>
+
+</Project>

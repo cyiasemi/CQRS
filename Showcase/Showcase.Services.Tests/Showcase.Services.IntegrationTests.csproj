@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FakeItEasy" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="3.1.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="Moq" Version="4.13.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="1.2.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Services\Showcase.Service.Api\Showcase.Service.Api.csproj" />
+    <ProjectReference Include="..\Services\Showcase.Service.Consumer\Showcase.Service.Application.csproj" />
+    <ProjectReference Include="..\Services\Showcase.Service.HttpDownloader\Showcase.Service.HttpDownloader.csproj" />
+    <ProjectReference Include="..\Services\Showcase.Services.FileImageSaver\Showcase.Services.FileImageSaver.csproj" />
+    <ProjectReference Include="..\Services\Showcase.Services.ImageMemoryDb\Showcase.Services.ImageMemoryDb.csproj" />
+    <ProjectReference Include="..\Services\Showcase.Services.JsonConverter\Showcase.Services.JsonConverter.csproj" />
+    <ProjectReference Include="..\Services\Showcase.Services.MemoryDb\Showcase.Services.MovieMemoryDb.csproj" />
+    <ProjectReference Include="..\Showcase.Domain.Core\Showcase.Domain.Core.csproj" />
+    <ProjectReference Include="..\Showcase.Infrastructure.IoC\Showcase.Infrastructure.IoC.csproj" />
+  </ItemGroup>
+
+</Project>
